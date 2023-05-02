@@ -80,10 +80,9 @@ class FileStorage:
         '''
         obj_dict = self.all(cls)
         for k, v in obj_dict.items():
-            matchstring = cls.__name__+ '.' + id
+            matchstring = cls.__name__ + '.' + id
             if k == matchstring:
-                return v
-         
+                return v         
         return None
 
     def count(self, cls=None):
